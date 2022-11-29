@@ -73,6 +73,16 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add__1___1_ {
+            get {
+                object obj = ResourceManager.GetObject("add (1) (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap user_person_profile_avatar_icon_190943__1_ {
             get {
                 object obj = ResourceManager.GetObject("user_person_profile_avatar_icon_190943 (1)", resourceCulture);
@@ -86,6 +96,16 @@ namespace WindowsFormsApp2.Properties {
         internal static System.Drawing.Bitmap VLF_logo_removebg_preview__1___1_ {
             get {
                 object obj = ResourceManager.GetObject("VLF_logo-removebg-preview (1) (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VLF_logo_removebg_preview__1___1_1 {
+            get {
+                object obj = ResourceManager.GetObject("VLF_logo-removebg-preview (1) (1)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

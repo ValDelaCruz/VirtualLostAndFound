@@ -245,9 +245,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(733, 166);
+            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.add__1___1_;
+            this.pictureBox1.Location = new System.Drawing.Point(753, 206);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(300, 300);
+            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;

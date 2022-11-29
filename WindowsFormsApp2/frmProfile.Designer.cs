@@ -173,9 +173,9 @@
             this.lblLogOut.BackColor = System.Drawing.Color.Teal;
             this.lblLogOut.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogOut.ForeColor = System.Drawing.Color.White;
-            this.lblLogOut.Location = new System.Drawing.Point(1078, 657);
+            this.lblLogOut.Location = new System.Drawing.Point(1078, 652);
             this.lblLogOut.Name = "lblLogOut";
-            this.lblLogOut.Size = new System.Drawing.Size(121, 36);
+            this.lblLogOut.Size = new System.Drawing.Size(121, 41);
             this.lblLogOut.TabIndex = 27;
             this.lblLogOut.Text = "Log Out";
             this.lblLogOut.UseVisualStyleBackColor = false;

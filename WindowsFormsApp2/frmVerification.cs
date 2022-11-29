@@ -15,6 +15,7 @@ namespace WindowsFormsApp2
         public frmVerification()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -22,6 +23,7 @@ namespace WindowsFormsApp2
             MessageBox.Show("Uploaded Successfully!");
             frmSeekerTable frmSeekerTable = new frmSeekerTable();
             frmSeekerTable.Show();
+            this.Visible = false;
         }
 
         private void lblSkip_Click(object sender, EventArgs e)
@@ -29,6 +31,7 @@ namespace WindowsFormsApp2
             MessageBox.Show("Request Claim Successfully!");
             frmSeekerTable frmSeekerTable = new frmSeekerTable();
             frmSeekerTable.Show();
+            this.Visible = false;
         }
     }
 }

@@ -142,9 +142,9 @@
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmit.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSubmit.Location = new System.Drawing.Point(843, 575);
+            this.btnSubmit.Location = new System.Drawing.Point(843, 566);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(149, 39);
+            this.btnSubmit.Size = new System.Drawing.Size(149, 48);
             this.btnSubmit.TabIndex = 11;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
@@ -232,9 +232,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(734, 194);
+            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.add__1___1_;
+            this.pictureBox1.Location = new System.Drawing.Point(783, 253);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(318, 302);
+            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 

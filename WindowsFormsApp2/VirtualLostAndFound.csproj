@@ -71,6 +71,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration.cs" />
+    <Compile Include="DatabaseManager.cs" />
     <Compile Include="frmClaimedHistory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +218,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="WindowsFormsApp2\Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VLF_logo-removebg-preview %281%29 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add %281%29 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

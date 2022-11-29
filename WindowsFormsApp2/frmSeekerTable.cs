@@ -30,6 +30,7 @@ namespace WindowsFormsApp2
         {
             frmVerification frmVerification = new frmVerification();
             frmVerification.Show();
+            this.Visible = false;
         }
     }
 }

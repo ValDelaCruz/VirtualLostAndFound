@@ -32,5 +32,6 @@ namespace WindowsFormsApp2
             frmWelcome.Show();
             this.Visible = false;
         }
+
     }
 }

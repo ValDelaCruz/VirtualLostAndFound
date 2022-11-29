@@ -114,7 +114,7 @@
             // 
             // pictureBox1
             // 
-
+            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.VLF_logo_removebg_preview__1___1_1;
             this.pictureBox1.Location = new System.Drawing.Point(260, 208);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(300, 300);
