@@ -45,6 +45,7 @@
             this.tabPage12 = new System.Windows.Forms.TabPage();
             this.lblLogOut = new System.Windows.Forms.Button();
             this.lblItemType = new System.Windows.Forms.Label();
+            this.tabPage13 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.SuspendLayout();
@@ -75,7 +76,7 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(481, 410);
+            this.tabControl1.Size = new System.Drawing.Size(656, 504);
             this.tabControl1.TabIndex = 8;
             // 
             // tabPage1
@@ -83,8 +84,8 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage1.Size = new System.Drawing.Size(473, 380);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(648, 471);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Item Type";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -150,8 +151,8 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 26);
             this.tabPage8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage8.Size = new System.Drawing.Size(473, 380);
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(648, 471);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Action";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -163,12 +164,12 @@
             this.tabControl2.Controls.Add(this.tabPage10);
             this.tabControl2.Controls.Add(this.tabPage11);
             this.tabControl2.Controls.Add(this.tabPage12);
-            this.tabControl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl2.Location = new System.Drawing.Point(576, 153);
-            this.tabControl2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl2.Controls.Add(this.tabPage13);
+            this.tabControl2.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl2.Location = new System.Drawing.Point(768, 188);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(295, 410);
+            this.tabControl2.Size = new System.Drawing.Size(475, 504);
             this.tabControl2.TabIndex = 9;
             // 
             // tabPage7
@@ -177,8 +178,8 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 26);
             this.tabPage7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage7.Size = new System.Drawing.Size(287, 380);
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(467, 471);
             this.tabPage7.TabIndex = 0;
             this.tabPage7.Text = "Full Name";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -254,11 +255,20 @@
             this.lblItemType.Text = "Ganda ni Anne";
             this.lblItemType.Click += new System.EventHandler(this.lblItemType_Click);
             // 
+            // tabPage13
+            // 
+            this.tabPage13.Location = new System.Drawing.Point(4, 29);
+            this.tabPage13.Name = "tabPage13";
+            this.tabPage13.Size = new System.Drawing.Size(385, 471);
+            this.tabPage13.TabIndex = 5;
+            this.tabPage13.Text = "Image";
+            this.tabPage13.UseVisualStyleBackColor = true;
+            // 
             // frmAdminTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(908, 605);
+            this.ClientSize = new System.Drawing.Size(1270, 763);
             this.Controls.Add(this.lblItemType);
             this.Controls.Add(this.lblLogOut);
             this.Controls.Add(this.tabControl2);
@@ -294,5 +304,6 @@
         private System.Windows.Forms.TabPage tabPage12;
         private System.Windows.Forms.Button lblLogOut;
         private System.Windows.Forms.Label lblItemType;
+        private System.Windows.Forms.TabPage tabPage13;
     }
 }
