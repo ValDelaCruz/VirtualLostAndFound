@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,14 @@ namespace WindowsFormsApp2
 {
     public partial class frmUserLogin : Form
     {
+
+        MySqlConnection connection = new MySqlConnection();
+
+
         public frmUserLogin()
         {
             InitializeComponent();
             this.CenterToScreen();
-
             this.txtfldPassword.Size = new Size(this.txtfldPassword.Size.Width, 50);
         }
 
@@ -42,9 +46,5 @@ namespace WindowsFormsApp2
 
         }
 
-        private void frmUserLogin_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

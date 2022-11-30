@@ -12,7 +12,6 @@ namespace WindowsFormsApp2
 {
     public partial class frmSignup : Form
     {
-        DatabaseManager dbm = new DatabaseManager();
 
         bool uniqueUsrnm = false;
         bool verifiedPass = false;
@@ -43,14 +42,7 @@ namespace WindowsFormsApp2
             string username = tbUsername.Text;
             string password = tbPassword.Text;
 
-            if (firstname.Equals("") && middleinitial.Equals(""))
-            {
-                MessageBox.Show("Registered Successfully!"); n
-            }
-            else
-            {
-
-            }
+            
         }
     }
 }
