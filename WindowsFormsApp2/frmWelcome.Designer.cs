@@ -64,7 +64,7 @@
             this.btnSignup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignup.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignup.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSignup.Location = new System.Drawing.Point(896, 455);
+            this.btnSignup.Location = new System.Drawing.Point(896, 503);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(190, 42);
             this.btnSignup.TabIndex = 5;
@@ -78,7 +78,7 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnLogin.Location = new System.Drawing.Point(896, 393);
+            this.btnLogin.Location = new System.Drawing.Point(896, 409);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(190, 42);
             this.btnLogin.TabIndex = 6;

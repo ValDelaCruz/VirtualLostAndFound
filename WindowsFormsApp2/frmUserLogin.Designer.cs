@@ -115,7 +115,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.VLF_logo_removebg_preview__1___1_1;
-            this.pictureBox1.Location = new System.Drawing.Point(260, 208);
+            this.pictureBox1.Location = new System.Drawing.Point(263, 208);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(300, 300);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -137,6 +137,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "frmUserLogin";
             this.Text = "User Login";
+            this.Load += new System.EventHandler(this.frmUserLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -86,7 +86,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(920, 558);
+            this.ClientSize = new System.Drawing.Size(936, 657);
             this.Controls.Add(this.lblSkip);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);

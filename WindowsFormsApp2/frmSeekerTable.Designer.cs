@@ -31,6 +31,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnRequestClaim = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -40,7 +41,6 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.btnRequestClaim = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -83,12 +83,25 @@
             this.tabPage1.Text = "Item Type";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // btnRequestClaim
+            // 
+            this.btnRequestClaim.BackColor = System.Drawing.Color.Teal;
+            this.btnRequestClaim.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRequestClaim.ForeColor = System.Drawing.Color.White;
+            this.btnRequestClaim.Location = new System.Drawing.Point(829, 6);
+            this.btnRequestClaim.Name = "btnRequestClaim";
+            this.btnRequestClaim.Size = new System.Drawing.Size(116, 54);
+            this.btnRequestClaim.TabIndex = 24;
+            this.btnRequestClaim.Text = "Request \r\nClaim";
+            this.btnRequestClaim.UseVisualStyleBackColor = false;
+            this.btnRequestClaim.Click += new System.EventHandler(this.btnRequestClaim_Click);
+            // 
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 35);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(908, 465);
+            this.tabPage2.Size = new System.Drawing.Size(951, 465);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Item Brand";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -98,7 +111,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 35);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(908, 465);
+            this.tabPage3.Size = new System.Drawing.Size(951, 465);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Location Found";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -108,7 +121,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 35);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(908, 465);
+            this.tabPage4.Size = new System.Drawing.Size(951, 465);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Date Found";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -118,7 +131,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 35);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(908, 465);
+            this.tabPage5.Size = new System.Drawing.Size(951, 465);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Time Found";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -128,7 +141,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 35);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(908, 465);
+            this.tabPage7.Size = new System.Drawing.Size(951, 465);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Reported By";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -138,7 +151,7 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 35);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(908, 465);
+            this.tabPage8.Size = new System.Drawing.Size(951, 465);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Action";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -176,24 +189,11 @@
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
             // 
-            // btnRequestClaim
-            // 
-            this.btnRequestClaim.BackColor = System.Drawing.Color.Teal;
-            this.btnRequestClaim.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRequestClaim.ForeColor = System.Drawing.Color.White;
-            this.btnRequestClaim.Location = new System.Drawing.Point(829, 6);
-            this.btnRequestClaim.Name = "btnRequestClaim";
-            this.btnRequestClaim.Size = new System.Drawing.Size(116, 54);
-            this.btnRequestClaim.TabIndex = 24;
-            this.btnRequestClaim.Text = "Request \r\nClaim";
-            this.btnRequestClaim.UseVisualStyleBackColor = false;
-            this.btnRequestClaim.Click += new System.EventHandler(this.btnRequestClaim_Click);
-            // 
             // frmSeekerTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1211, 757);
+            this.ClientSize = new System.Drawing.Size(1211, 653);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnBack);

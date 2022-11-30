@@ -37,19 +37,19 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.tbFirstName = new System.Windows.Forms.TextBox();
+            this.tbMiddleInitial = new System.Windows.Forms.TextBox();
+            this.tbLastName = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
+            this.tbContactNo = new System.Windows.Forms.TextBox();
+            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.tbUsername = new System.Windows.Forms.TextBox();
             this.btnSignup = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pbSignUpImage = new System.Windows.Forms.PictureBox();
+            this.cbUserType = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSignUpImage)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -149,62 +149,62 @@
             this.label9.TabIndex = 10;
             this.label9.Text = "Username:";
             // 
-            // textBox1
+            // tbFirstName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(368, 166);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(234, 31);
-            this.textBox1.TabIndex = 11;
+            this.tbFirstName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbFirstName.Location = new System.Drawing.Point(368, 166);
+            this.tbFirstName.Name = "tbFirstName";
+            this.tbFirstName.Size = new System.Drawing.Size(234, 31);
+            this.tbFirstName.TabIndex = 11;
             // 
-            // textBox2
+            // tbMiddleInitial
             // 
-            this.textBox2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(368, 206);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(234, 31);
-            this.textBox2.TabIndex = 12;
+            this.tbMiddleInitial.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMiddleInitial.Location = new System.Drawing.Point(368, 206);
+            this.tbMiddleInitial.Name = "tbMiddleInitial";
+            this.tbMiddleInitial.Size = new System.Drawing.Size(234, 31);
+            this.tbMiddleInitial.TabIndex = 12;
             // 
-            // textBox4
+            // tbLastName
             // 
-            this.textBox4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(368, 246);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(234, 31);
-            this.textBox4.TabIndex = 13;
+            this.tbLastName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbLastName.Location = new System.Drawing.Point(368, 246);
+            this.tbLastName.Name = "tbLastName";
+            this.tbLastName.Size = new System.Drawing.Size(234, 31);
+            this.tbLastName.TabIndex = 13;
             // 
-            // textBox5
+            // tbEmail
             // 
-            this.textBox5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(368, 368);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(234, 31);
-            this.textBox5.TabIndex = 16;
+            this.tbEmail.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEmail.Location = new System.Drawing.Point(368, 368);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(234, 31);
+            this.tbEmail.TabIndex = 16;
             // 
-            // textBox6
+            // tbContactNo
             // 
-            this.textBox6.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(368, 328);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(234, 31);
-            this.textBox6.TabIndex = 15;
+            this.tbContactNo.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbContactNo.Location = new System.Drawing.Point(368, 328);
+            this.tbContactNo.Name = "tbContactNo";
+            this.tbContactNo.Size = new System.Drawing.Size(234, 31);
+            this.tbContactNo.TabIndex = 15;
             // 
-            // textBox7
+            // tbPassword
             // 
-            this.textBox7.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(368, 455);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.PasswordChar = '*';
-            this.textBox7.Size = new System.Drawing.Size(234, 31);
-            this.textBox7.TabIndex = 18;
+            this.tbPassword.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPassword.Location = new System.Drawing.Point(368, 455);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PasswordChar = '*';
+            this.tbPassword.Size = new System.Drawing.Size(234, 31);
+            this.tbPassword.TabIndex = 18;
             // 
-            // textBox8
+            // tbUsername
             // 
-            this.textBox8.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(368, 412);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(234, 31);
-            this.textBox8.TabIndex = 17;
+            this.tbUsername.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUsername.Location = new System.Drawing.Point(368, 412);
+            this.tbUsername.Name = "tbUsername";
+            this.tbUsername.Size = new System.Drawing.Size(234, 31);
+            this.tbUsername.TabIndex = 17;
             // 
             // btnSignup
             // 
@@ -243,46 +243,46 @@
             this.label10.TabIndex = 21;
             this.label10.Text = "First Name:";
             // 
-            // pictureBox1
+            // pbSignUpImage
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.add__1___1_;
-            this.pictureBox1.Location = new System.Drawing.Point(753, 206);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
+            this.pbSignUpImage.Image = global::WindowsFormsApp2.Properties.Resources.add__1___1_;
+            this.pbSignUpImage.Location = new System.Drawing.Point(753, 206);
+            this.pbSignUpImage.Name = "pbSignUpImage";
+            this.pbSignUpImage.Size = new System.Drawing.Size(250, 250);
+            this.pbSignUpImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbSignUpImage.TabIndex = 22;
+            this.pbSignUpImage.TabStop = false;
             // 
-            // comboBox1
+            // cbUserType
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbUserType.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbUserType.FormattingEnabled = true;
+            this.cbUserType.Items.AddRange(new object[] {
             "Student",
             "Teacher",
             "Staff"});
-            this.comboBox1.Location = new System.Drawing.Point(368, 287);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(234, 30);
-            this.comboBox1.TabIndex = 23;
+            this.cbUserType.Location = new System.Drawing.Point(368, 287);
+            this.cbUserType.Name = "cbUserType";
+            this.cbUserType.Size = new System.Drawing.Size(234, 30);
+            this.cbUserType.TabIndex = 23;
             // 
             // frmSignup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1211, 653);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.cbUserType);
+            this.Controls.Add(this.pbSignUpImage);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSignup);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbPassword);
+            this.Controls.Add(this.tbUsername);
+            this.Controls.Add(this.tbEmail);
+            this.Controls.Add(this.tbContactNo);
+            this.Controls.Add(this.tbLastName);
+            this.Controls.Add(this.tbMiddleInitial);
+            this.Controls.Add(this.tbFirstName);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -295,7 +295,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "frmSignup";
             this.Text = " Sign Up";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSignUpImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -312,17 +312,17 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox tbFirstName;
+        private System.Windows.Forms.TextBox tbMiddleInitial;
+        private System.Windows.Forms.TextBox tbLastName;
+        private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.TextBox tbContactNo;
+        private System.Windows.Forms.TextBox tbPassword;
+        private System.Windows.Forms.TextBox tbUsername;
         private System.Windows.Forms.Button btnSignup;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.PictureBox pbSignUpImage;
+        private System.Windows.Forms.ComboBox cbUserType;
     }
 }

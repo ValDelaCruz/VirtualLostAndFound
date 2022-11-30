@@ -30,6 +30,8 @@ namespace WindowsFormsApp2
             frmHome frmHome = new frmHome();
             frmHome.Show();
             this.Visible = false;
-        } 
+        }
+
+
     }
 }

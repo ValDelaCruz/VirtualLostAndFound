@@ -55,7 +55,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.label2.Location = new System.Drawing.Point(256, 31);
+            this.label2.Location = new System.Drawing.Point(235, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(725, 91);
             this.label2.TabIndex = 6;
@@ -71,11 +71,11 @@
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(67, 188);
+            this.tabControl1.Location = new System.Drawing.Point(35, 169);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(624, 620);
+            this.tabControl1.Size = new System.Drawing.Size(624, 464);
             this.tabControl1.TabIndex = 8;
             // 
             // tabPage1
@@ -84,7 +84,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(616, 587);
+            this.tabPage1.Size = new System.Drawing.Size(616, 431);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Item Type";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -165,11 +165,11 @@
             this.tabControl2.Controls.Add(this.tabPage12);
             this.tabControl2.Controls.Add(this.tabPage13);
             this.tabControl2.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl2.Location = new System.Drawing.Point(731, 188);
+            this.tabControl2.Location = new System.Drawing.Point(699, 169);
             this.tabControl2.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(485, 620);
+            this.tabControl2.Size = new System.Drawing.Size(485, 464);
             this.tabControl2.TabIndex = 9;
             // 
             // tabPage7
@@ -179,7 +179,7 @@
             this.tabPage7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage7.Size = new System.Drawing.Size(477, 587);
+            this.tabPage7.Size = new System.Drawing.Size(477, 431);
             this.tabPage7.TabIndex = 0;
             this.tabPage7.Text = "Full Name";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -257,7 +257,7 @@
             this.lblItemType.AutoSize = true;
             this.lblItemType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblItemType.ForeColor = System.Drawing.Color.Chocolate;
-            this.lblItemType.Location = new System.Drawing.Point(63, 135);
+            this.lblItemType.Location = new System.Drawing.Point(34, 126);
             this.lblItemType.Name = "lblItemType";
             this.lblItemType.Size = new System.Drawing.Size(164, 25);
             this.lblItemType.TabIndex = 23;
@@ -268,7 +268,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1279, 939);
+            this.ClientSize = new System.Drawing.Size(1211, 653);
             this.Controls.Add(this.lblItemType);
             this.Controls.Add(this.lblLogOut);
             this.Controls.Add(this.tabControl2);

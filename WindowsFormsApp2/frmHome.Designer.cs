@@ -75,7 +75,7 @@
             this.btnFinder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFinder.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinder.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnFinder.Location = new System.Drawing.Point(506, 466);
+            this.btnFinder.Location = new System.Drawing.Point(506, 419);
             this.btnFinder.Name = "btnFinder";
             this.btnFinder.Size = new System.Drawing.Size(190, 58);
             this.btnFinder.TabIndex = 7;
@@ -89,7 +89,7 @@
             this.btnSeeker.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeeker.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSeeker.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSeeker.Location = new System.Drawing.Point(506, 575);
+            this.btnSeeker.Location = new System.Drawing.Point(506, 524);
             this.btnSeeker.Name = "btnSeeker";
             this.btnSeeker.Size = new System.Drawing.Size(190, 58);
             this.btnSeeker.TabIndex = 8;
@@ -114,7 +114,7 @@
             this.lblHelpCenter.AutoSize = true;
             this.lblHelpCenter.Font = new System.Drawing.Font("Rockwell", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHelpCenter.ForeColor = System.Drawing.Color.Teal;
-            this.lblHelpCenter.Location = new System.Drawing.Point(12, 658);
+            this.lblHelpCenter.Location = new System.Drawing.Point(12, 616);
             this.lblHelpCenter.Name = "lblHelpCenter";
             this.lblHelpCenter.Size = new System.Drawing.Size(146, 28);
             this.lblHelpCenter.TabIndex = 25;
@@ -125,7 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1211, 695);
+            this.ClientSize = new System.Drawing.Size(1211, 653);
             this.Controls.Add(this.lblHelpCenter);
             this.Controls.Add(this.lblProfile);
             this.Controls.Add(this.btnSeeker);

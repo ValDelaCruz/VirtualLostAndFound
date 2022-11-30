@@ -63,7 +63,7 @@
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Font = new System.Drawing.Font("Rockwell", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(155, 231);
+            this.tabControl1.Location = new System.Drawing.Point(155, 216);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(911, 439);
@@ -145,7 +145,7 @@
             this.btnReport.BackColor = System.Drawing.Color.Teal;
             this.btnReport.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReport.ForeColor = System.Drawing.Color.White;
-            this.btnReport.Location = new System.Drawing.Point(928, 160);
+            this.btnReport.Location = new System.Drawing.Point(928, 145);
             this.btnReport.Name = "btnReport";
             this.btnReport.Size = new System.Drawing.Size(134, 44);
             this.btnReport.TabIndex = 7;
@@ -170,7 +170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1215, 711);
+            this.ClientSize = new System.Drawing.Size(1215, 657);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnReport);
             this.Controls.Add(this.tabControl1);

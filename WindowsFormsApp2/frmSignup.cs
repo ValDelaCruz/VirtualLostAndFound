@@ -12,6 +12,11 @@ namespace WindowsFormsApp2
 {
     public partial class frmSignup : Form
     {
+        DatabaseManager dbm = new DatabaseManager();
+
+        bool uniqueUsrnm = false;
+        bool verifiedPass = false;
+
         public frmSignup()
         {
             InitializeComponent();
@@ -29,7 +34,23 @@ namespace WindowsFormsApp2
 
         private void btnSignup_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Registered Successfully!");
+            string firstname = tbFirstName.Text;
+            string middleinitial = tbMiddleInitial.Text;
+            string lastname = tbLastName.Text;
+            string usertype = cbUserType.Text;
+            string contactNo = tbContactNo.Text;
+            string email = tbEmail.Text;
+            string username = tbUsername.Text;
+            string password = tbPassword.Text;
+
+            if (firstname.Equals("") && middleinitial.Equals(""))
+            {
+                MessageBox.Show("Registered Successfully!"); n
+            }
+            else
+            {
+
+            }
         }
     }
 }

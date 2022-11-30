@@ -41,5 +41,10 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void frmUserLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
