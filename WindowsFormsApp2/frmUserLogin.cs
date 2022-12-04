@@ -28,10 +28,29 @@ namespace WindowsFormsApp2
 
         private void btnUserLogin_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Login Successfully!");
-            frmHome frmHome = new frmHome();
-            frmHome.Show();
-            this.Visible = false;
+            
+            DataTable QueryResults = new DataTable();
+            string SQLQuery = ($"SELECT * FROM Users WHERE username ='{txtfldUsername.Text}' AND password ='{txtfldPassword.Text}';");
+
+            QueryResults = DatabaseManager.ExecuteCommand(SQLQuery);
+
+            if (QueryResults.Rows.Count > 0)
+            {
+                MessageBox.Show("Login Successfully!");
+                
+                
+                frmHome frmHome = new frmHome();
+                frmHome.Show();
+                this.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Invalid Username and/or Password! Please Try again.");
+                txtfldUsername.ResetText();
+                txtfldPassword.ResetText();
+            }
+
+             
         }
 
         private void btnBack_Click(object sender, EventArgs e)
