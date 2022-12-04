@@ -25,6 +25,9 @@ namespace WindowsFormsApp2
             this.Visible = false;
         }
 
+        private void frmHelpCenter_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

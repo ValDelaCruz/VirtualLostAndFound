@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHelpCenter));
             this.btnBack = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -56,7 +57,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Rockwell", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Teal;
-            this.label1.Location = new System.Drawing.Point(40, 285);
+            this.label1.Location = new System.Drawing.Point(40, 228);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 33);
             this.label1.TabIndex = 25;
@@ -67,18 +68,18 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Teal;
-            this.label4.Location = new System.Drawing.Point(103, 340);
+            this.label4.Location = new System.Drawing.Point(74, 271);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(163, 22);
+            this.label4.Size = new System.Drawing.Size(1043, 264);
             this.label4.TabIndex = 26;
-            this.label4.Text = "Some text here...";
+            this.label4.Text = resources.GetString("label4.Text");
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Teal;
-            this.label5.Location = new System.Drawing.Point(103, 473);
+            this.label5.Location = new System.Drawing.Point(103, 572);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(163, 22);
             this.label5.TabIndex = 28;
@@ -89,7 +90,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Rockwell", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Teal;
-            this.label6.Location = new System.Drawing.Point(40, 418);
+            this.label6.Location = new System.Drawing.Point(40, 539);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(91, 33);
             this.label6.TabIndex = 27;
@@ -100,7 +101,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Teal;
-            this.label7.Location = new System.Drawing.Point(103, 616);
+            this.label7.Location = new System.Drawing.Point(103, 660);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(163, 22);
             this.label7.TabIndex = 30;
@@ -111,7 +112,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Rockwell", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Teal;
-            this.label8.Location = new System.Drawing.Point(40, 557);
+            this.label8.Location = new System.Drawing.Point(40, 601);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(468, 33);
             this.label8.TabIndex = 29;
@@ -132,7 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1215, 657);
+            this.ClientSize = new System.Drawing.Size(1215, 1055);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label5);
@@ -143,6 +144,7 @@
             this.Controls.Add(this.btnBack);
             this.Name = "frmHelpCenter";
             this.Text = "Help Center";
+            this.Load += new System.EventHandler(this.frmHelpCenter_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

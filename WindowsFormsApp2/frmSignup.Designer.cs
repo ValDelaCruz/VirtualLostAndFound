@@ -295,6 +295,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "frmSignup";
             this.Text = " Sign Up";
+            this.Load += new System.EventHandler(this.frmSignup_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbSignUpImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

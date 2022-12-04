@@ -44,5 +44,10 @@ namespace WindowsFormsApp2
 
             
         }
+
+        private void frmSignup_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
