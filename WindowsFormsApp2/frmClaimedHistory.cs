@@ -28,8 +28,8 @@ namespace WindowsFormsApp2
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            frmWelcome frmWelcome = new frmWelcome();
-            frmWelcome.Show();
+            frmAdminTable adminTB = new frmAdminTable();
+            adminTB.Show();
             this.Visible = false;
         }
 

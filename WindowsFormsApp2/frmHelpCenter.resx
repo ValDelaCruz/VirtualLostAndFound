@@ -120,15 +120,15 @@
   <data name="lbl3.Text" xml:space="preserve">
     <value>
 
-             The Virtual Lost and Found system is an online version of the lost and found. Just like the original lost and found, we have the finder and the 
-seeker. The finder is the one who found an item, while the seeker is the one who lost an item. 
+             The Virtual Lost and Found system is an online version of the lost and found. Just like the original lost and found, we have the finder and the seeker. The finder is
+the one who found an item, while the seeker is the one who lost an item. 
 
-             The finder may create a post about the item they have found. They must also include a picture of the item. Aside from this, the finder can also
-view what they have posted. If the finder wants to view all the other posts of the other finders, they must go to the Seeker’s View form. 
+             The finder may create a post about the item they have found. They must also include a picture of the item. Aside from this, the finder can also view what they 
+have posted. If the finder wants to view all the other posts of the other finders, they must go to the Seeker’s View form. 
 
-             The seeker will go to the Seeker’s View form and will be able to view all the finder’s post. They can search their lost item in the table, and from 
-there, find the item they have lost. After finding their lost item they may request a claim for it. For security purposes, the system will ask the seeker to 
-provide an image of their lost item as verification. 
+             The seeker will go to the Seeker’s View form and will be able to view all the finder’s post. They can search their lost item in the table, and from there, find the 
+item they have lost. After finding their lost item they may request a claim for it. For security purposes, the system will ask the seeker to provide an image of their lost 
+item as verification. 
 
              There will also be an admin that will be the one handling the request claims and transaction of items.   
 
@@ -136,9 +136,9 @@ provide an image of their lost item as verification.
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>For further inquiries, please contact the developers of the Virtual Lost and Found System. The developers' contact information are stated below:
-     Name: Allysah Valerie C. Dela Cruz                         Name: Jaiza Mae M. De Vera                             Name: Justine Mae B. Juanima                               Name: Anne Louise D. Lopez
-     Email: allydc19@gmail.com                                     Email: deverajaiza707@gmail.com                      Email: justinemaejuanima@gmail.com                     Email: annelouisedl@gmail.com
-     Contact: 09392571580                                           Contact: 09090162028                                        Contact: 09217118598                                           Contact: 09754476749</value>
+     Name: Allysah Valerie C. Dela Cruz                        Name: Jaiza Mae M. De Vera                             Name: Justine Mae B. Juanima                               Name: Anne Louise D. Lopez
+     Email: allydc19@gmail.com                                     Email: deverajaiza707@gmail.com                   Email: justinemaejuanima@gmail.com                  Email: annelouisedl@gmail.com
+     Contact: 09392571580                                             Contact: 09090162028                                       Contact: 09217118598                                             Contact: 09754476749</value>
   </data>
   <data name="comboBox1.Items" xml:space="preserve">
     <value>               To claim an item in the system, click the Seeker button in the Home Page. You will be directed to the Seeker’s View form, then you will be able to see all the items that have been found. </value>

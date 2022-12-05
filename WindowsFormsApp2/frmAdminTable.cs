@@ -29,6 +29,14 @@ namespace WindowsFormsApp2
         {
             frmClaimedHistory frmClaimedHistory = new frmClaimedHistory();
             frmClaimedHistory.Show();
+            this.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmWelcome frmWelcome = new frmWelcome();
+            frmWelcome.Show();
+            this.Visible = false;
         }
     }
 }

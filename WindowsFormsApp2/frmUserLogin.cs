@@ -34,22 +34,42 @@ namespace WindowsFormsApp2
 
             QueryResults = DatabaseManager.ExecuteCommand(SQLQuery);
 
-            if (QueryResults.Rows.Count > 0)
+            if(txtfldUsername.Text == "AdminDelaCruz" && txtfldPassword.Text == "admin123")
             {
-                MessageBox.Show("Login Successfully!");
-                
-                
-                frmHome frmHome = new frmHome();
-                frmHome.Show();
-                this.Visible = false;
+                if (QueryResults.Rows.Count > 0)
+                {
+                    MessageBox.Show("Login Successfully!");
+
+
+                    frmAdminTable admin = new frmAdminTable();
+                    admin.Show();
+                    this.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Username and/or Password! Please Try again.");
+                    txtfldUsername.ResetText();
+                    txtfldPassword.ResetText();
+                }
             }
             else
             {
-                MessageBox.Show("Invalid Username and/or Password! Please Try again.");
-                txtfldUsername.ResetText();
-                txtfldPassword.ResetText();
-            }
+                if (QueryResults.Rows.Count > 0)
+                {
+                    MessageBox.Show("Login Successfully!");
 
+
+                    frmHome frmHome = new frmHome();
+                    frmHome.Show();
+                    this.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Username and/or Password! Please Try again.");
+                    txtfldUsername.ResetText();
+                    txtfldPassword.ResetText();
+                }
+            }
              
         }
 

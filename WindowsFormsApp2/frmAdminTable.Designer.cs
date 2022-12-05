@@ -46,6 +46,7 @@
             this.tabPage13 = new System.Windows.Forms.TabPage();
             this.lblLogOut = new System.Windows.Forms.Button();
             this.lblItemType = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.SuspendLayout();
@@ -95,7 +96,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(616, 587);
+            this.tabPage2.Size = new System.Drawing.Size(616, 431);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Item Brand";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -106,7 +107,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage3.Size = new System.Drawing.Size(616, 587);
+            this.tabPage3.Size = new System.Drawing.Size(616, 431);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Location Found";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -117,7 +118,7 @@
             this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage4.Size = new System.Drawing.Size(616, 587);
+            this.tabPage4.Size = new System.Drawing.Size(616, 431);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Date Found";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -128,7 +129,7 @@
             this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage5.Size = new System.Drawing.Size(616, 587);
+            this.tabPage5.Size = new System.Drawing.Size(616, 431);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Time Found";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -140,7 +141,7 @@
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.tabPage6.Size = new System.Drawing.Size(616, 587);
+            this.tabPage6.Size = new System.Drawing.Size(616, 431);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Image";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -151,7 +152,7 @@
             this.tabPage8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage8.Size = new System.Drawing.Size(616, 587);
+            this.tabPage8.Size = new System.Drawing.Size(616, 431);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Action";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -190,7 +191,7 @@
             this.tabPage9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage9.Size = new System.Drawing.Size(477, 587);
+            this.tabPage9.Size = new System.Drawing.Size(477, 431);
             this.tabPage9.TabIndex = 1;
             this.tabPage9.Text = "UserType";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -201,7 +202,7 @@
             this.tabPage10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage10.Size = new System.Drawing.Size(477, 587);
+            this.tabPage10.Size = new System.Drawing.Size(477, 431);
             this.tabPage10.TabIndex = 2;
             this.tabPage10.Text = "Contact";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -212,7 +213,7 @@
             this.tabPage11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage11.Size = new System.Drawing.Size(477, 587);
+            this.tabPage11.Size = new System.Drawing.Size(477, 431);
             this.tabPage11.TabIndex = 3;
             this.tabPage11.Text = "Email";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -223,7 +224,7 @@
             this.tabPage12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage12.Size = new System.Drawing.Size(477, 587);
+            this.tabPage12.Size = new System.Drawing.Size(477, 431);
             this.tabPage12.TabIndex = 4;
             this.tabPage12.Text = "Username";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -233,7 +234,7 @@
             this.tabPage13.Location = new System.Drawing.Point(4, 29);
             this.tabPage13.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Size = new System.Drawing.Size(477, 587);
+            this.tabPage13.Size = new System.Drawing.Size(477, 431);
             this.tabPage13.TabIndex = 5;
             this.tabPage13.Text = "Image";
             this.tabPage13.UseVisualStyleBackColor = true;
@@ -264,11 +265,25 @@
             this.lblItemType.Text = "Claimed History";
             this.lblItemType.Click += new System.EventHandler(this.lblItemType_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Teal;
+            this.button1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1078, 654);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(121, 41);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "Log Out";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmAdminTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1211, 653);
+            this.ClientSize = new System.Drawing.Size(1211, 707);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblItemType);
             this.Controls.Add(this.lblLogOut);
             this.Controls.Add(this.tabControl2);
@@ -305,5 +320,6 @@
         private System.Windows.Forms.Button lblLogOut;
         private System.Windows.Forms.Label lblItemType;
         private System.Windows.Forms.TabPage tabPage13;
+        private System.Windows.Forms.Button button1;
     }
 }
