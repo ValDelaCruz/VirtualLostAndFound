@@ -50,6 +50,7 @@
             this.pbSignUpImage = new System.Windows.Forms.PictureBox();
             this.cbUserType = new System.Windows.Forms.ComboBox();
             this.opnFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.tbFilePath = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbSignUpImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -252,7 +253,7 @@
             // 
             this.pbSignUpImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pbSignUpImage.Image = global::WindowsFormsApp2.Properties.Resources.add__1___1_;
-            this.pbSignUpImage.Location = new System.Drawing.Point(753, 155);
+            this.pbSignUpImage.Location = new System.Drawing.Point(772, 143);
             this.pbSignUpImage.Name = "pbSignUpImage";
             this.pbSignUpImage.Size = new System.Drawing.Size(250, 250);
             this.pbSignUpImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -278,11 +279,20 @@
             // 
             this.opnFileDialog.FileName = "openFileDialog1";
             // 
+            // tbFilePath
+            // 
+            this.tbFilePath.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbFilePath.Location = new System.Drawing.Point(744, 455);
+            this.tbFilePath.Name = "tbFilePath";
+            this.tbFilePath.Size = new System.Drawing.Size(359, 27);
+            this.tbFilePath.TabIndex = 24;
+            // 
             // frmSignup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1211, 653);
+            this.Controls.Add(this.tbFilePath);
             this.Controls.Add(this.cbUserType);
             this.Controls.Add(this.pbSignUpImage);
             this.Controls.Add(this.label10);
@@ -307,7 +317,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "frmSignup";
             this.Text = " Sign Up";
-           
+            this.Load += new System.EventHandler(this.frmSignup_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pbSignUpImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -338,5 +348,6 @@
         private System.Windows.Forms.PictureBox pbSignUpImage;
         private System.Windows.Forms.ComboBox cbUserType;
         private System.Windows.Forms.OpenFileDialog opnFileDialog;
+        private System.Windows.Forms.TextBox tbFilePath;
     }
 }

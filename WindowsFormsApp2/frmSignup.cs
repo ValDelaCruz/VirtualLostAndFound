@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.IO;
 
 namespace WindowsFormsApp2
 {
@@ -32,20 +33,14 @@ namespace WindowsFormsApp2
 
         private void btnSignup_Click(object sender, EventArgs e)
         {
-            string SQLQuery = ($@"INSERT INTO Users (FirstName, MiddleInitial, LastName, UserType, ContactNo, Email, Username, Password)
-                                VALUES('{tbFirstName.Text}', '{tbMiddleInitial.Text}', '{tbLastName.Text}', '{cbUserType.Text}', '{tbContactNo.Text}', '{tbEmail.Text}', '{tbUsername.Text}', '{tbPassword.Text}')");
+            string SQLQuery = ($@"INSERT INTO Users (FirstName, MiddleInitial, LastName, UserType, ContactNo, Email, Username, Password, Profile_Picture)
+                                VALUES('{tbFirstName.Text}', '{tbMiddleInitial.Text}', '{tbLastName.Text}', '{cbUserType.Text}', '{tbContactNo.Text}', '{tbEmail.Text}', '{tbUsername.Text}', '{tbPassword.Text}', '{tbFilePath.Text}')");
+            
             DatabaseManager.ExecuteCommand(SQLQuery);
 
-
-
-            if (tbFirstName.Text == "" || tbMiddleInitial.Text == "" || tbLastName.Text == "" || cbUserType.Text == "" || tbContactNo.Text == "" || tbEmail.Text == "" || tbUsername.Text == "" || tbPassword.Text == "")
+            if (tbFirstName.Text == "" || tbMiddleInitial.Text == "" || tbLastName.Text == "" || cbUserType.Text == "" || tbContactNo.Text == "" || tbEmail.Text == "" || tbUsername.Text == "" || tbPassword.Text == "" || tbFilePath.Text == "" )
             {
-                MessageBox.Show("Please complete the following requirements!");
-
-                if (pbSignUpImage == null)
-                {
-                    MessageBox.Show("Please upload a profile picture!");
-                }
+                MessageBox.Show("Please complete the following requirements!");   
             }
             else
             {
@@ -62,6 +57,7 @@ namespace WindowsFormsApp2
                         tbEmail.ResetText();
                         tbUsername.ResetText();
                         tbPassword.ResetText();
+                        tbFilePath.ResetText();
                     }
                     else if (DatabaseManager.ErrorCode == 1062)
                     {
@@ -74,6 +70,7 @@ namespace WindowsFormsApp2
                         tbEmail.ResetText();
                         tbUsername.ResetText();
                         tbPassword.ResetText();
+                        tbFilePath.ResetText();
                     }
                     else
                     {
@@ -86,7 +83,7 @@ namespace WindowsFormsApp2
                         tbEmail.ResetText();
                         tbUsername.ResetText();
                         tbPassword.ResetText();
-
+                        tbFilePath.ResetText();
                     }
                 }
                 catch(Exception ex)
@@ -151,10 +148,17 @@ namespace WindowsFormsApp2
                 if (opnFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     pbSignUpImage.SizeMode = PictureBoxSizeMode.StretchImage;
+                    string picturePath = opnFileDialog.FileName.ToString(); 
+                    tbFilePath.Text = picturePath;
+                    pbSignUpImage.ImageLocation = picturePath;
                     pbSignUpImage.Image = new Bitmap(opnFileDialog.FileName);
                 }
 
         }
 
+        private void frmSignup_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
