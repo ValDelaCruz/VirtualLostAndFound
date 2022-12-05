@@ -8,14 +8,12 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp2
 {
     public partial class frmSignup : Form
     {
-
-        bool uniqueUsrnm = false;
-        bool verifiedPass = false;
 
         public frmSignup()
         {
@@ -37,10 +35,17 @@ namespace WindowsFormsApp2
             string SQLQuery = ($@"INSERT INTO Users (FirstName, MiddleInitial, LastName, UserType, ContactNo, Email, Username, Password)
                                 VALUES('{tbFirstName.Text}', '{tbMiddleInitial.Text}', '{tbLastName.Text}', '{cbUserType.Text}', '{tbContactNo.Text}', '{tbEmail.Text}', '{tbUsername.Text}', '{tbPassword.Text}')");
             DatabaseManager.ExecuteCommand(SQLQuery);
-         
+
+
+
             if (tbFirstName.Text == "" || tbMiddleInitial.Text == "" || tbLastName.Text == "" || cbUserType.Text == "" || tbContactNo.Text == "" || tbEmail.Text == "" || tbUsername.Text == "" || tbPassword.Text == "")
             {
-                MessageBox.Show("Please enter required fields!");
+                MessageBox.Show("Please complete the following requirements!");
+
+                if (pbSignUpImage == null)
+                {
+                    MessageBox.Show("Please upload a profile picture!");
+                }
             }
             else
             {
@@ -60,13 +65,25 @@ namespace WindowsFormsApp2
                     }
                     else if (DatabaseManager.ErrorCode == 1062)
                     {
-                        MessageBox.Show("Username already exists! Try another one.");
+                        MessageBox.Show("The data already exists!");
+                        tbFirstName.ResetText();
+                        tbMiddleInitial.ResetText();
+                        tbLastName.ResetText();
+                        cbUserType.Items.Clear();
+                        tbContactNo.ResetText();
+                        tbEmail.ResetText();
                         tbUsername.ResetText();
                         tbPassword.ResetText();
                     }
                     else
                     {
-                        MessageBox.Show("Unexpected Error contact administrator.");
+                        MessageBox.Show("You have entered an incorrect data!");
+                        tbFirstName.ResetText();
+                        tbMiddleInitial.ResetText();
+                        tbLastName.ResetText();
+                        cbUserType.Items.Clear();
+                        tbContactNo.ResetText();
+                        tbEmail.ResetText();
                         tbUsername.ResetText();
                         tbPassword.ResetText();
 
@@ -122,6 +139,21 @@ namespace WindowsFormsApp2
                 e.Handled = true;
 
             }
+        }
+
+        private void pbSignUpImage_Click(object sender, EventArgs e)
+        {
+            
+                //For Profile Picture Upload
+                OpenFileDialog opnFileDialog = new OpenFileDialog();
+
+                opnFileDialog.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+                if (opnFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    pbSignUpImage.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pbSignUpImage.Image = new Bitmap(opnFileDialog.FileName);
+                }
+
         }
 
     }

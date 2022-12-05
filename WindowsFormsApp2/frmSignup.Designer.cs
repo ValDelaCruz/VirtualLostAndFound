@@ -49,6 +49,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.pbSignUpImage = new System.Windows.Forms.PictureBox();
             this.cbUserType = new System.Windows.Forms.ComboBox();
+            this.opnFileDialog = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pbSignUpImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -249,13 +250,15 @@
             // 
             // pbSignUpImage
             // 
+            this.pbSignUpImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pbSignUpImage.Image = global::WindowsFormsApp2.Properties.Resources.add__1___1_;
-            this.pbSignUpImage.Location = new System.Drawing.Point(753, 206);
+            this.pbSignUpImage.Location = new System.Drawing.Point(753, 155);
             this.pbSignUpImage.Name = "pbSignUpImage";
             this.pbSignUpImage.Size = new System.Drawing.Size(250, 250);
             this.pbSignUpImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbSignUpImage.TabIndex = 22;
             this.pbSignUpImage.TabStop = false;
+            this.pbSignUpImage.Click += new System.EventHandler(this.pbSignUpImage_Click);
             // 
             // cbUserType
             // 
@@ -270,6 +273,10 @@
             this.cbUserType.Name = "cbUserType";
             this.cbUserType.Size = new System.Drawing.Size(275, 30);
             this.cbUserType.TabIndex = 23;
+            // 
+            // opnFileDialog
+            // 
+            this.opnFileDialog.FileName = "openFileDialog1";
             // 
             // frmSignup
             // 
@@ -300,6 +307,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "frmSignup";
             this.Text = " Sign Up";
+           
             ((System.ComponentModel.ISupportInitialize)(this.pbSignUpImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -329,5 +337,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pbSignUpImage;
         private System.Windows.Forms.ComboBox cbUserType;
+        private System.Windows.Forms.OpenFileDialog opnFileDialog;
     }
 }
