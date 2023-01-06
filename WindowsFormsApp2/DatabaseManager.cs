@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,14 +13,15 @@ namespace WindowsFormsApp2
     class DatabaseManager
     {
         public static int ErrorCode;
+        static string myConnectionString = "Server=localhost; Database=dbvlf; Uid=root; Pwd=Valdelacruz123";
+        static MySqlConnection con = new MySqlConnection();
+        static MySqlDataAdapter adapter;
 
         //For user login & registration
         public static DataTable ExecuteCommand(string command)
         {
-            string myConnectionString = "Server=localhost; Database=dbvlf; Uid=root; Pwd=Valdelacruz123";
-            MySqlConnection con = new MySqlConnection();
-            MySqlDataAdapter adapter;
-
+           
+            
             DataTable dataTable = new DataTable();
 
             ErrorCode = -1;
@@ -42,5 +44,19 @@ namespace WindowsFormsApp2
 
             return dataTable;
         }
+
+         public static DataTable RetrieveData()
+        {
+            MySqlCommand cmd = new MySqlCommand("SELECT * FROM FinderPost", con);
+            adapter.SelectCommand = cmd;
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            BindingSource binding = new BindingSource();
+            binding.DataSource = table;
+            adapter.Update(table);
+
+            return table;
+        } 
     }
 }

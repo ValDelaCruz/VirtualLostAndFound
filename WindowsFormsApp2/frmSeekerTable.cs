@@ -32,5 +32,11 @@ namespace WindowsFormsApp2
             frmVerification.Show();
             this.Visible = false;
         }
+
+        private void frmSeekerTable_Load(object sender, EventArgs e)
+        {
+
+            dgvReports.DataSource = DatabaseManager.RetrieveData();
+        }
     }
 }

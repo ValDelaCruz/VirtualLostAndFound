@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,6 +33,9 @@ namespace WindowsFormsApp2
             this.Visible = false;
         }
 
-
+        private void frmFinderTable_Load(object sender, EventArgs e)
+        {
+            dgvReports.DataSource = DatabaseManager.RetrieveData();
+        }
     }
 }
