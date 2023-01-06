@@ -37,15 +37,16 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
-            this.lblItemType = new System.Windows.Forms.Label();
-            this.lblItemColor = new System.Windows.Forms.Label();
-            this.lblItemBrand = new System.Windows.Forms.Label();
-            this.lblLocationFound = new System.Windows.Forms.Label();
-            this.lblDateFound = new System.Windows.Forms.Label();
-            this.lblTimeFound = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pbUpload = new System.Windows.Forms.PictureBox();
+            this.tbItemType = new System.Windows.Forms.TextBox();
+            this.tbItemColor = new System.Windows.Forms.TextBox();
+            this.tbItemBrand = new System.Windows.Forms.TextBox();
+            this.tbLocationFound = new System.Windows.Forms.TextBox();
+            this.tbTimeFound = new System.Windows.Forms.TextBox();
+            this.dtpDateFound = new System.Windows.Forms.DateTimePicker();
+            this.tbFilePath = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUpload)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -150,73 +151,6 @@
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
-            // lblItemType
-            // 
-            this.lblItemType.AutoSize = true;
-            this.lblItemType.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblItemType.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblItemType.Location = new System.Drawing.Point(330, 253);
-            this.lblItemType.Name = "lblItemType";
-            this.lblItemType.Size = new System.Drawing.Size(80, 22);
-            this.lblItemType.TabIndex = 12;
-            this.lblItemType.Text = "Ballpen";
-            // 
-            // lblItemColor
-            // 
-            this.lblItemColor.AutoSize = true;
-            this.lblItemColor.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblItemColor.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblItemColor.Location = new System.Drawing.Point(330, 312);
-            this.lblItemColor.Name = "lblItemColor";
-            this.lblItemColor.Size = new System.Drawing.Size(50, 22);
-            this.lblItemColor.TabIndex = 13;
-            this.lblItemColor.Text = "Blue";
-            // 
-            // lblItemBrand
-            // 
-            this.lblItemBrand.AutoSize = true;
-            this.lblItemBrand.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblItemBrand.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblItemBrand.Location = new System.Drawing.Point(330, 372);
-            this.lblItemBrand.Name = "lblItemBrand";
-            this.lblItemBrand.Size = new System.Drawing.Size(67, 22);
-            this.lblItemBrand.TabIndex = 14;
-            this.lblItemBrand.Text = "Panda";
-            // 
-            // lblLocationFound
-            // 
-            this.lblLocationFound.AutoSize = true;
-            this.lblLocationFound.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocationFound.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblLocationFound.Location = new System.Drawing.Point(330, 439);
-            this.lblLocationFound.Name = "lblLocationFound";
-            this.lblLocationFound.Size = new System.Drawing.Size(86, 22);
-            this.lblLocationFound.TabIndex = 15;
-            this.lblLocationFound.Text = "Canteen";
-            // 
-            // lblDateFound
-            // 
-            this.lblDateFound.AutoSize = true;
-            this.lblDateFound.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateFound.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblDateFound.Location = new System.Drawing.Point(330, 509);
-            this.lblDateFound.Name = "lblDateFound";
-            this.lblDateFound.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblDateFound.Size = new System.Drawing.Size(90, 22);
-            this.lblDateFound.TabIndex = 16;
-            this.lblDateFound.Text = "11-18-22";
-            // 
-            // lblTimeFound
-            // 
-            this.lblTimeFound.AutoSize = true;
-            this.lblTimeFound.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimeFound.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblTimeFound.Location = new System.Drawing.Point(330, 575);
-            this.lblTimeFound.Name = "lblTimeFound";
-            this.lblTimeFound.Size = new System.Drawing.Size(56, 22);
-            this.lblTimeFound.TabIndex = 17;
-            this.lblTimeFound.Text = "1 pm";
-            // 
             // btnBack
             // 
             this.btnBack.BackColor = System.Drawing.Color.Teal;
@@ -230,29 +164,91 @@
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // pictureBox1
+            // pbUpload
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.add__1___1_;
-            this.pictureBox1.Location = new System.Drawing.Point(783, 253);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 23;
-            this.pictureBox1.TabStop = false;
+            this.pbUpload.Image = global::WindowsFormsApp2.Properties.Resources.add__1___1_;
+            this.pbUpload.Location = new System.Drawing.Point(794, 166);
+            this.pbUpload.Name = "pbUpload";
+            this.pbUpload.Size = new System.Drawing.Size(250, 250);
+            this.pbUpload.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbUpload.TabIndex = 23;
+            this.pbUpload.TabStop = false;
+            this.pbUpload.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pbUpload_MouseClick);
+            // 
+            // tbItemType
+            // 
+            this.tbItemType.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbItemType.Location = new System.Drawing.Point(317, 250);
+            this.tbItemType.Name = "tbItemType";
+            this.tbItemType.Size = new System.Drawing.Size(275, 31);
+            this.tbItemType.TabIndex = 24;
+            this.tbItemType.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbItemType_KeyPress);
+            // 
+            // tbItemColor
+            // 
+            this.tbItemColor.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbItemColor.Location = new System.Drawing.Point(317, 309);
+            this.tbItemColor.Name = "tbItemColor";
+            this.tbItemColor.Size = new System.Drawing.Size(275, 31);
+            this.tbItemColor.TabIndex = 25;
+            this.tbItemColor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbItemColor_KeyPress);
+            // 
+            // tbItemBrand
+            // 
+            this.tbItemBrand.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbItemBrand.Location = new System.Drawing.Point(317, 363);
+            this.tbItemBrand.Name = "tbItemBrand";
+            this.tbItemBrand.Size = new System.Drawing.Size(275, 31);
+            this.tbItemBrand.TabIndex = 26;
+            this.tbItemBrand.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbItemBrand_KeyPress);
+            // 
+            // tbLocationFound
+            // 
+            this.tbLocationFound.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbLocationFound.Location = new System.Drawing.Point(317, 436);
+            this.tbLocationFound.Name = "tbLocationFound";
+            this.tbLocationFound.Size = new System.Drawing.Size(275, 31);
+            this.tbLocationFound.TabIndex = 27;
+            this.tbLocationFound.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLocationFound_KeyPress);
+            // 
+            // tbTimeFound
+            // 
+            this.tbTimeFound.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTimeFound.Location = new System.Drawing.Point(317, 566);
+            this.tbTimeFound.Name = "tbTimeFound";
+            this.tbTimeFound.Size = new System.Drawing.Size(275, 31);
+            this.tbTimeFound.TabIndex = 29;
+            // 
+            // dtpDateFound
+            // 
+            this.dtpDateFound.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpDateFound.Location = new System.Drawing.Point(317, 509);
+            this.dtpDateFound.Name = "dtpDateFound";
+            this.dtpDateFound.Size = new System.Drawing.Size(275, 27);
+            this.dtpDateFound.TabIndex = 30;
+            // 
+            // tbFilePath
+            // 
+            this.tbFilePath.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbFilePath.Location = new System.Drawing.Point(764, 477);
+            this.tbFilePath.Name = "tbFilePath";
+            this.tbFilePath.Size = new System.Drawing.Size(358, 27);
+            this.tbFilePath.TabIndex = 31;
             // 
             // frmFinderPost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1211, 653);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.tbFilePath);
+            this.Controls.Add(this.dtpDateFound);
+            this.Controls.Add(this.tbTimeFound);
+            this.Controls.Add(this.tbLocationFound);
+            this.Controls.Add(this.tbItemBrand);
+            this.Controls.Add(this.tbItemColor);
+            this.Controls.Add(this.tbItemType);
+            this.Controls.Add(this.pbUpload);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.lblTimeFound);
-            this.Controls.Add(this.lblDateFound);
-            this.Controls.Add(this.lblLocationFound);
-            this.Controls.Add(this.lblItemBrand);
-            this.Controls.Add(this.lblItemColor);
-            this.Controls.Add(this.lblItemType);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -265,7 +261,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "frmFinderPost";
             this.Text = "Finder\'s Post";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUpload)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -282,13 +278,14 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.Label lblItemType;
-        private System.Windows.Forms.Label lblItemColor;
-        private System.Windows.Forms.Label lblItemBrand;
-        private System.Windows.Forms.Label lblLocationFound;
-        private System.Windows.Forms.Label lblDateFound;
-        private System.Windows.Forms.Label lblTimeFound;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbUpload;
+        private System.Windows.Forms.TextBox tbItemType;
+        private System.Windows.Forms.TextBox tbItemColor;
+        private System.Windows.Forms.TextBox tbItemBrand;
+        private System.Windows.Forms.TextBox tbLocationFound;
+        private System.Windows.Forms.TextBox tbTimeFound;
+        private System.Windows.Forms.DateTimePicker dtpDateFound;
+        private System.Windows.Forms.TextBox tbFilePath;
     }
 }

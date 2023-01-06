@@ -58,6 +58,8 @@ namespace WindowsFormsApp2
                         tbUsername.ResetText();
                         tbPassword.ResetText();
                         tbFilePath.ResetText();
+                        pbSignUpImage.ResetText();
+                        
                     }
                     else if (DatabaseManager.ErrorCode == 1062)
                     {
@@ -71,19 +73,11 @@ namespace WindowsFormsApp2
                         tbUsername.ResetText();
                         tbPassword.ResetText();
                         tbFilePath.ResetText();
+                        pbSignUpImage.ResetText();
                     }
                     else
                     {
-                        MessageBox.Show("You have entered an incorrect data!");
-                        tbFirstName.ResetText();
-                        tbMiddleInitial.ResetText();
-                        tbLastName.ResetText();
-                        cbUserType.Items.Clear();
-                        tbContactNo.ResetText();
-                        tbEmail.ResetText();
-                        tbUsername.ResetText();
-                        tbPassword.ResetText();
-                        tbFilePath.ResetText();
+                        MessageBox.Show("You have entered an incorrect data!");                      
                     }
                 }
                 catch(Exception ex)
@@ -94,12 +88,6 @@ namespace WindowsFormsApp2
           
             
         }
-
-        private void frmSignup_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void tbFirstName_KeyPress(object sender, KeyPressEventArgs e)
         {
 
