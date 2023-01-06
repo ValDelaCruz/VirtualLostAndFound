@@ -107,7 +107,7 @@
             this.dgvReports.ColumnHeadersHeight = 29;
             this.dgvReports.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvReports.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dgvReports.Location = new System.Drawing.Point(57, 205);
+            this.dgvReports.Location = new System.Drawing.Point(58, 205);
             this.dgvReports.MultiSelect = false;
             this.dgvReports.Name = "dgvReports";
             this.dgvReports.ReadOnly = true;
@@ -119,7 +119,7 @@
             this.dgvReports.ShowCellToolTips = false;
             this.dgvReports.ShowEditingIcon = false;
             this.dgvReports.ShowRowErrors = false;
-            this.dgvReports.Size = new System.Drawing.Size(1089, 436);
+            this.dgvReports.Size = new System.Drawing.Size(1100, 436);
             this.dgvReports.TabIndex = 25;
             // 
             // frmSeekerTable
