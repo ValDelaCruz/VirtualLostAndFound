@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFinderPost));
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,7 +39,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
-            this.pbUpload = new System.Windows.Forms.PictureBox();
             this.tbItemType = new System.Windows.Forms.TextBox();
             this.tbItemColor = new System.Windows.Forms.TextBox();
             this.tbItemBrand = new System.Windows.Forms.TextBox();
@@ -46,6 +46,7 @@
             this.tbTimeFound = new System.Windows.Forms.TextBox();
             this.dtpDateFound = new System.Windows.Forms.DateTimePicker();
             this.tbFilePath = new System.Windows.Forms.TextBox();
+            this.pbUpload = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbUpload)).BeginInit();
             this.SuspendLayout();
             // 
@@ -164,17 +165,6 @@
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // pbUpload
-            // 
-            this.pbUpload.Image = global::WindowsFormsApp2.Properties.Resources.add__1___1_;
-            this.pbUpload.Location = new System.Drawing.Point(794, 166);
-            this.pbUpload.Name = "pbUpload";
-            this.pbUpload.Size = new System.Drawing.Size(250, 250);
-            this.pbUpload.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbUpload.TabIndex = 23;
-            this.pbUpload.TabStop = false;
-            this.pbUpload.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pbUpload_MouseClick);
-            // 
             // tbItemType
             // 
             this.tbItemType.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -230,10 +220,21 @@
             // tbFilePath
             // 
             this.tbFilePath.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbFilePath.Location = new System.Drawing.Point(764, 477);
+            this.tbFilePath.Location = new System.Drawing.Point(815, 477);
             this.tbFilePath.Name = "tbFilePath";
-            this.tbFilePath.Size = new System.Drawing.Size(358, 27);
+            this.tbFilePath.Size = new System.Drawing.Size(273, 27);
             this.tbFilePath.TabIndex = 31;
+            // 
+            // pbUpload
+            // 
+            this.pbUpload.Image = global::WindowsFormsApp2.Properties.Resources.add__1___1_;
+            this.pbUpload.Location = new System.Drawing.Point(831, 250);
+            this.pbUpload.Name = "pbUpload";
+            this.pbUpload.Size = new System.Drawing.Size(245, 229);
+            this.pbUpload.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbUpload.TabIndex = 23;
+            this.pbUpload.TabStop = false;
+            this.pbUpload.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pbUpload_MouseClick);
             // 
             // frmFinderPost
             // 
@@ -259,7 +260,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmFinderPost";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Finder\'s Post";
             ((System.ComponentModel.ISupportInitialize)(this.pbUpload)).EndInit();
             this.ResumeLayout(false);

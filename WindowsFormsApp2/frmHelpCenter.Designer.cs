@@ -134,7 +134,7 @@
             "please contact the developers of the system with their contact information below." +
                 ""});
             this.cbFAQs1.Location = new System.Drawing.Point(113, 416);
-            this.cbFAQs1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbFAQs1.Margin = new System.Windows.Forms.Padding(4);
             this.cbFAQs1.Name = "cbFAQs1";
             this.cbFAQs1.Size = new System.Drawing.Size(1205, 28);
             this.cbFAQs1.TabIndex = 37;
@@ -158,7 +158,7 @@
                 "you may click SKIP. Your request ",
             "to claim an item will be received by the admin, then just wait for their reply."});
             this.comboBox1.Location = new System.Drawing.Point(113, 452);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(1205, 28);
             this.comboBox1.TabIndex = 38;
@@ -175,7 +175,7 @@
             "your username and password, log in to your account. After logging in, you can use" +
                 " the system, and even claim an item in the Seeker’s View form."});
             this.comboBox2.Location = new System.Drawing.Point(113, 488);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(1205, 28);
             this.comboBox2.TabIndex = 39;
@@ -192,7 +192,7 @@
             "form again, and in the table, you will be able to see the post you have made, as " +
                 "well as your previous posts."});
             this.comboBox3.Location = new System.Drawing.Point(113, 524);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(1205, 28);
             this.comboBox3.TabIndex = 40;
@@ -208,7 +208,7 @@
             "As a finder, if you want to see your posts, just click the Finder button in the H" +
                 "ome Page, and you will see all the posts you’ve made."});
             this.comboBox4.Location = new System.Drawing.Point(113, 560);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(1205, 28);
             this.comboBox4.TabIndex = 41;
@@ -225,7 +225,7 @@
                 "called “found item”. ",
             "If you are the seeker, then the item you have lost will be called “lost item”. "});
             this.comboBox5.Location = new System.Drawing.Point(113, 596);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(1205, 28);
             this.comboBox5.TabIndex = 42;
@@ -245,7 +245,7 @@
                 "n the ",
             "table."});
             this.comboBox6.Location = new System.Drawing.Point(113, 632);
-            this.comboBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox6.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(1205, 28);
             this.comboBox6.TabIndex = 43;
@@ -270,8 +270,10 @@
             this.Controls.Add(this.lbl1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lbl3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmHelpCenter";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Help Center";
             this.Load += new System.EventHandler(this.frmHelpCenter_Load);
             this.ResumeLayout(false);
