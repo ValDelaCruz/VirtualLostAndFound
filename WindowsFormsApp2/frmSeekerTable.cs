@@ -28,7 +28,7 @@ namespace WindowsFormsApp2
 
         private void btnRequestClaim_Click(object sender, EventArgs e)
         {
-            frmVerification frmVerification = new frmVerification();
+            pbUploadVerification frmVerification = new pbUploadVerification();
             frmVerification.Show();
             this.Visible = false;
         }

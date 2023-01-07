@@ -49,17 +49,10 @@ namespace WindowsFormsApp2
                     if (DatabaseManager.ErrorCode == -1)
                     {
                         MessageBox.Show("Successfully Registered");
-                        tbFirstName.ResetText();
-                        tbMiddleInitial.ResetText();
-                        tbLastName.ResetText();
-                        cbUserType.Items.Clear();
-                        tbContactNo.ResetText();
-                        tbEmail.ResetText();
-                        tbUsername.ResetText();
-                        tbPassword.ResetText();
-                        tbFilePath.ResetText();
-                        pbSignUpImage.ResetText();
-                        
+                        frmWelcome welcome = new frmWelcome();
+                        welcome.Show();
+                        this.Visible = false;
+
                     }
                     else if (DatabaseManager.ErrorCode == 1062)
                     {

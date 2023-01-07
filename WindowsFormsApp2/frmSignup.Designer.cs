@@ -254,10 +254,10 @@
             // 
             this.pbSignUpImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pbSignUpImage.Image = global::WindowsFormsApp2.Properties.Resources.add__1___1_;
-            this.pbSignUpImage.Location = new System.Drawing.Point(772, 143);
+            this.pbSignUpImage.Location = new System.Drawing.Point(814, 143);
             this.pbSignUpImage.Name = "pbSignUpImage";
             this.pbSignUpImage.Size = new System.Drawing.Size(250, 250);
-            this.pbSignUpImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbSignUpImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSignUpImage.TabIndex = 22;
             this.pbSignUpImage.TabStop = false;
             this.pbSignUpImage.Click += new System.EventHandler(this.pbSignUpImage_Click);
@@ -283,9 +283,10 @@
             // tbFilePath
             // 
             this.tbFilePath.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbFilePath.Location = new System.Drawing.Point(744, 455);
+            this.tbFilePath.Location = new System.Drawing.Point(773, 440);
             this.tbFilePath.Name = "tbFilePath";
-            this.tbFilePath.Size = new System.Drawing.Size(359, 27);
+            this.tbFilePath.ReadOnly = true;
+            this.tbFilePath.Size = new System.Drawing.Size(321, 27);
             this.tbFilePath.TabIndex = 24;
             // 
             // frmSignup

@@ -41,7 +41,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Rockwell", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.label2.Location = new System.Drawing.Point(263, 41);
+            this.label2.Location = new System.Drawing.Point(263, 31);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(701, 88);
             this.label2.TabIndex = 4;
@@ -52,7 +52,7 @@
             this.btnReport.BackColor = System.Drawing.Color.Teal;
             this.btnReport.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReport.ForeColor = System.Drawing.Color.White;
-            this.btnReport.Location = new System.Drawing.Point(1027, 132);
+            this.btnReport.Location = new System.Drawing.Point(970, 132);
             this.btnReport.Name = "btnReport";
             this.btnReport.Size = new System.Drawing.Size(134, 44);
             this.btnReport.TabIndex = 7;
@@ -85,7 +85,7 @@
             this.dgvReports.ColumnHeadersHeight = 29;
             this.dgvReports.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvReports.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dgvReports.Location = new System.Drawing.Point(61, 193);
+            this.dgvReports.Location = new System.Drawing.Point(138, 193);
             this.dgvReports.MultiSelect = false;
             this.dgvReports.Name = "dgvReports";
             this.dgvReports.ReadOnly = true;
@@ -97,7 +97,7 @@
             this.dgvReports.ShowCellToolTips = false;
             this.dgvReports.ShowEditingIcon = false;
             this.dgvReports.ShowRowErrors = false;
-            this.dgvReports.Size = new System.Drawing.Size(1100, 436);
+            this.dgvReports.Size = new System.Drawing.Size(966, 436);
             this.dgvReports.TabIndex = 23;
             // 
             // frmFinderTable

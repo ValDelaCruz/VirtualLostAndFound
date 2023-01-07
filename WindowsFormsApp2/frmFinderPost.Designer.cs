@@ -222,6 +222,7 @@
             this.tbFilePath.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbFilePath.Location = new System.Drawing.Point(815, 477);
             this.tbFilePath.Name = "tbFilePath";
+            this.tbFilePath.ReadOnly = true;
             this.tbFilePath.Size = new System.Drawing.Size(273, 27);
             this.tbFilePath.TabIndex = 31;
             // 

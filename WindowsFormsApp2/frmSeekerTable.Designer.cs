@@ -54,7 +54,7 @@
             this.btnRequestClaim.BackColor = System.Drawing.Color.Teal;
             this.btnRequestClaim.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRequestClaim.ForeColor = System.Drawing.Color.White;
-            this.btnRequestClaim.Location = new System.Drawing.Point(58, 135);
+            this.btnRequestClaim.Location = new System.Drawing.Point(125, 132);
             this.btnRequestClaim.Name = "btnRequestClaim";
             this.btnRequestClaim.Size = new System.Drawing.Size(105, 54);
             this.btnRequestClaim.TabIndex = 24;
@@ -107,7 +107,7 @@
             this.dgvReports.ColumnHeadersHeight = 29;
             this.dgvReports.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvReports.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dgvReports.Location = new System.Drawing.Point(58, 205);
+            this.dgvReports.Location = new System.Drawing.Point(125, 205);
             this.dgvReports.MultiSelect = false;
             this.dgvReports.Name = "dgvReports";
             this.dgvReports.ReadOnly = true;
@@ -119,7 +119,7 @@
             this.dgvReports.ShowCellToolTips = false;
             this.dgvReports.ShowEditingIcon = false;
             this.dgvReports.ShowRowErrors = false;
-            this.dgvReports.Size = new System.Drawing.Size(1100, 436);
+            this.dgvReports.Size = new System.Drawing.Size(966, 436);
             this.dgvReports.TabIndex = 25;
             // 
             // frmSeekerTable
