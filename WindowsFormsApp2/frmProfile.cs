@@ -32,5 +32,9 @@ namespace WindowsFormsApp2
             this.Visible = false;
         }
 
+        private void frmProfile_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

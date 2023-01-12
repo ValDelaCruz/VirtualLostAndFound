@@ -138,7 +138,6 @@
             this.cbFAQs1.Name = "cbFAQs1";
             this.cbFAQs1.Size = new System.Drawing.Size(1205, 28);
             this.cbFAQs1.TabIndex = 37;
-            this.cbFAQs1.Text = "•Why can\'t I sign up?";
             // 
             // comboBox1
             // 
