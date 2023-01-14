@@ -45,7 +45,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Rockwell", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Chocolate;
-            this.label2.Location = new System.Drawing.Point(195, 48);
+            this.label2.Location = new System.Drawing.Point(266, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(660, 79);
             this.label2.TabIndex = 6;
@@ -72,7 +72,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(177, 139);
+            this.tabControl1.Location = new System.Drawing.Point(256, 126);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(716, 495);

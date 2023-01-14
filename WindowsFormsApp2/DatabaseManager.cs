@@ -20,8 +20,6 @@ namespace WindowsFormsApp2
         //For user login & registration
         public static DataTable ExecuteCommand(string command)
         {
-           
-            
             DataTable dataTable = new DataTable();
 
             ErrorCode = -1;

@@ -35,13 +35,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AForge">
-      <HintPath>..\..\..\..\..\Documents\AForge.NET Framework-2.2.5\Release\AForge.dll</HintPath>
+      <HintPath>..\..\..\..\Documents\AForge.NET Framework-2.2.5\Release\AForge.dll</HintPath>
     </Reference>
     <Reference Include="AForge.Video">
-      <HintPath>..\..\..\..\..\Documents\AForge.NET Framework-2.2.5\Release\AForge.Video.dll</HintPath>
+      <HintPath>..\..\..\..\Documents\AForge.NET Framework-2.2.5\Release\AForge.Video.dll</HintPath>
     </Reference>
     <Reference Include="AForge.Video.DirectShow">
-      <HintPath>..\..\..\..\..\Documents\AForge.NET Framework-2.2.5\Release\AForge.Video.DirectShow.dll</HintPath>
+      <HintPath>..\..\..\..\Documents\AForge.NET Framework-2.2.5\Release\AForge.Video.DirectShow.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=8.0.31.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="MySqlConnector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
@@ -166,6 +166,7 @@
     <Compile Include="SplashScreen.Designer.cs">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserSession.cs" />
     <EmbeddedResource Include="frmClaimedHistory.resx">
       <DependentUpon>frmClaimedHistory.cs</DependentUpon>
     </EmbeddedResource>

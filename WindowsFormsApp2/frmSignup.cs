@@ -28,6 +28,7 @@ namespace WindowsFormsApp2
         private FilterInfoCollection CaptureDevices;
         private VideoCaptureDevice videoSource;
         string fileName;
+       
 
         private void btnBack_Click(object sender, EventArgs e)
         {
@@ -38,12 +39,12 @@ namespace WindowsFormsApp2
 
         private void btnSignup_Click(object sender, EventArgs e)
         {
-            string SQLQuery = ($@"INSERT INTO Users (FirstName, MiddleInitial, LastName, UserType, ContactNo, Email, Username, Password, ProfilePicture)
+            string SQLQuery = ($@"INSERT INTO Users (FirstName, MiddleInitial, LastName, PermissionLevel, ContactNo, Email, Username, Password, ProfilePicture)
                                 VALUES('{tbFirstName.Text}', '{tbMiddleInitial.Text}', '{tbLastName.Text}', '{cbUserType.Text}', '{tbContactNo.Text}', '{tbEmail.Text}', '{tbUsername.Text}', '{tbPassword.Text}','{fileName}')");
             
             DatabaseManager.ExecuteCommand(SQLQuery);
 
-            if (tbFirstName.Text == "" || tbLastName.Text == "" || cbUserType.Text == "" || tbContactNo.Text == "" || tbEmail.Text == "" || tbUsername.Text == "" || tbPassword.Text == "")
+            if (tbFirstName.Text == "" || tbLastName.Text == "" || cbUserType.Text == "" || tbContactNo.Text == "" || tbEmail.Text == "" || tbUsername.Text == "" || tbPassword.Text == "" || pbCam2.Image == null)
             {
                 MessageBox.Show("All fields are required!");
                 
@@ -64,7 +65,6 @@ namespace WindowsFormsApp2
                     {
                         MessageBox.Show("The data already exists!");
                         tbFirstName.ResetText();
-                        tbMiddleInitial.ResetText();
                         tbLastName.ResetText();                     
                         tbContactNo.ResetText();
                         tbEmail.ResetText();
@@ -75,7 +75,8 @@ namespace WindowsFormsApp2
                     }
                     else
                     {
-                        MessageBox.Show("You have entered an incorrect data!");                      
+                        MessageBox.Show("You have entered an incorrect data!");
+                        MessageBox.Show(DatabaseManager.ErrorCode.ToString());                      
                     }
                 }
                 catch(Exception ex)
@@ -122,10 +123,7 @@ namespace WindowsFormsApp2
                 e.Handled = true;
 
             }
-        }
-
-
-
+        }     
         private void frmSignup_Load_1(object sender, EventArgs e)
         {
             //HIDING UPLOAD PROFILE PICTURE SECTION
@@ -171,18 +169,12 @@ namespace WindowsFormsApp2
         {
             //Profile Picture Setting and Saving to database
                 pbCam2.Image = pbCam.Image;
-                fileName = @"C:\Users\Ysah\Pictures\VLF Profile Picture\" + tbFirstName.Text + tbLastName.Text + ".jpg";
+                fileName = @"C:\\Users\\Ysah\\Pictures\\VLF Profile Picture\\" + tbFirstName.Text + tbLastName.Text + ".jpg";
                 var bitmap = new Bitmap(pbCam2.Width, pbCam2.Height);
                 pbCam2.DrawToBitmap(bitmap, pbCam2.ClientRectangle);
                 System.Drawing.Imaging.ImageFormat imageFormat = null;
                 imageFormat = System.Drawing.Imaging.ImageFormat.Jpeg;
                 bitmap.Save(fileName, imageFormat);
-                
-                //tbFilePath.Text = fileName;
-                //tbFileName.ResetText();
-
-
-
         }
 
         private void frmSignup_FormClosing(object sender, FormClosingEventArgs e)
@@ -210,7 +202,7 @@ namespace WindowsFormsApp2
                 btnStart.Visible = true;
                 btnCapture.Visible = true;
                 btnReset.Visible = true;
-            }            
+            }  
         }
     }
 }

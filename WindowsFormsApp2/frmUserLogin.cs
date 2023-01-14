@@ -38,9 +38,8 @@ namespace WindowsFormsApp2
             {
                 if (QueryResults.Rows.Count > 0)
                 {
+                    UserSession.userDetails = QueryResults;
                     MessageBox.Show("Login Successfully!");
-
-
                     frmAdminTable admin = new frmAdminTable();
                     admin.Show();
                     this.Visible = false;
@@ -56,9 +55,8 @@ namespace WindowsFormsApp2
             {
                 if (QueryResults.Rows.Count > 0)
                 {
+                    UserSession.userDetails = QueryResults;
                     MessageBox.Show("Login Successfully!");
-
-
                     frmHome frmHome = new frmHome();
                     frmHome.Show();
                     this.Visible = false;

@@ -75,6 +75,7 @@
             // 
             // dgvReports
             // 
+            this.dgvReports.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuPopup;
             this.dgvReports.AllowUserToAddRows = false;
             this.dgvReports.AllowUserToDeleteRows = false;
             this.dgvReports.AllowUserToResizeColumns = false;

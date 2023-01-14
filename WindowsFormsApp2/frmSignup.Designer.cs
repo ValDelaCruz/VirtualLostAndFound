@@ -52,7 +52,7 @@
             this.opnFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.btnStart = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAddProfPic = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pbCam2 = new System.Windows.Forms.PictureBox();
@@ -297,7 +297,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnAddProfPic);
             this.panel1.Controls.Add(this.tbFirstName);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.cbUserType);
@@ -321,18 +321,18 @@
             this.panel1.Size = new System.Drawing.Size(471, 513);
             this.panel1.TabIndex = 25;
             // 
-            // button1
+            // btnAddProfPic
             // 
-            this.button1.BackColor = System.Drawing.Color.Teal;
-            this.button1.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(196, 459);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(219, 38);
-            this.button1.TabIndex = 34;
-            this.button1.Text = "ADD PROFILE PICTURE";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAddProfPic.BackColor = System.Drawing.Color.Teal;
+            this.btnAddProfPic.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddProfPic.ForeColor = System.Drawing.Color.White;
+            this.btnAddProfPic.Location = new System.Drawing.Point(194, 454);
+            this.btnAddProfPic.Name = "btnAddProfPic";
+            this.btnAddProfPic.Size = new System.Drawing.Size(219, 38);
+            this.btnAddProfPic.TabIndex = 34;
+            this.btnAddProfPic.Text = "ADD PROFILE PICTURE";
+            this.btnAddProfPic.UseVisualStyleBackColor = false;
+            this.btnAddProfPic.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnReset
             // 
@@ -487,7 +487,7 @@
         private System.Windows.Forms.Button btnCapture;
         private System.Windows.Forms.Panel pnlProfilePicture;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAddProfPic;
         private System.Windows.Forms.ComboBox cbSource;
     }
 }

@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHelpCenter));
             this.btnBack = new System.Windows.Forms.Button();
             this.lbl2 = new System.Windows.Forms.Label();
-            this.lbl3 = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,6 +41,7 @@
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnBack
@@ -68,18 +68,6 @@
             this.lbl2.Size = new System.Drawing.Size(103, 24);
             this.lbl2.TabIndex = 25;
             this.lbl2.Text = "Overview";
-            // 
-            // lbl3
-            // 
-            this.lbl3.AutoSize = true;
-            this.lbl3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbl3.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3.ForeColor = System.Drawing.Color.Teal;
-            this.lbl3.Location = new System.Drawing.Point(15, 59);
-            this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(1312, 302);
-            this.lbl3.TabIndex = 26;
-            this.lbl3.Text = resources.GetString("lbl3.Text");
             // 
             // lbl1
             // 
@@ -250,12 +238,25 @@
             this.comboBox6.TabIndex = 43;
             this.comboBox6.Text = "•How to search for the items?";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Teal;
+            this.label1.Location = new System.Drawing.Point(12, 95);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1727, 121);
+            this.label1.TabIndex = 44;
+            this.label1.Text = resources.GetString("label1.Text");
+            // 
             // frmHelpCenter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1106, 806);
+            this.ClientSize = new System.Drawing.Size(1539, 806);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox6);
             this.Controls.Add(this.comboBox5);
             this.Controls.Add(this.comboBox4);
@@ -268,7 +269,6 @@
             this.Controls.Add(this.lbl2);
             this.Controls.Add(this.lbl1);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.lbl3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmHelpCenter";
@@ -284,7 +284,6 @@
 
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label lbl2;
-        private System.Windows.Forms.Label lbl3;
         private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
@@ -295,5 +294,6 @@
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.Label label1;
     }
 }
