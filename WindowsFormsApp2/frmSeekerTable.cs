@@ -38,5 +38,10 @@ namespace WindowsFormsApp2
 
             dgvReports.DataSource = DatabaseManager.RetrieveData();
         }
+
+        private void frmSeekerTable_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

@@ -71,5 +71,10 @@ namespace WindowsFormsApp2
                 pbUpload.Image = new Bitmap(opnFileDialog.FileName);
             }
         }
+
+        private void pbUploadVerification_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

@@ -109,6 +109,7 @@
             this.Name = "pbUploadVerification";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Verification";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.pbUploadVerification_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pbUpload)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -23,6 +23,7 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
             this.CenterToScreen();
+            
         }
 
         private FilterInfoCollection CaptureDevices;
@@ -179,14 +180,10 @@ namespace WindowsFormsApp2
 
         private void frmSignup_FormClosing(object sender, FormClosingEventArgs e)
         {
-            try
-            {
-                videoSource.Stop();
-            }
-            catch
-            {
-                return;
-            }
+           
+            videoSource.Stop();
+            Environment.Exit(0);
+
         }
 
         private void button1_Click(object sender, EventArgs e)

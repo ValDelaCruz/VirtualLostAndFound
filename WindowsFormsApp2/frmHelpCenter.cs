@@ -29,5 +29,10 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void frmHelpCenter_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

@@ -138,6 +138,7 @@
             this.Name = "frmSeekerTable";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seeker\'s View";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSeekerTable_FormClosing);
             this.Load += new System.EventHandler(this.frmSeekerTable_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReports)).EndInit();
             this.ResumeLayout(false);

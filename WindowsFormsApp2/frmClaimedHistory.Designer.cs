@@ -141,6 +141,7 @@
             this.Name = "frmClaimedHistory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Claimed History";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmClaimedHistory_FormClosing);
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

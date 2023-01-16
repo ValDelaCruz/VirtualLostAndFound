@@ -83,5 +83,9 @@ namespace WindowsFormsApp2
 
         }
 
+        private void frmUserLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

@@ -48,5 +48,10 @@ namespace WindowsFormsApp2
             this.Visible = false;
 
         }
+
+        private void frmWelcome_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

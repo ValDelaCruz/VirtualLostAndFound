@@ -296,6 +296,7 @@
             this.Name = "frmAdminTable";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin ";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAdminTable_FormClosing);
             this.tabControl1.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.ResumeLayout(false);

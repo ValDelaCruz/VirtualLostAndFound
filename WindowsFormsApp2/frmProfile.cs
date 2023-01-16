@@ -50,5 +50,10 @@ namespace WindowsFormsApp2
                 pbProfilePic.Image = Image.FromFile(row["ProfilePicture"].ToString());
             }
         }
+
+        private void frmProfile_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

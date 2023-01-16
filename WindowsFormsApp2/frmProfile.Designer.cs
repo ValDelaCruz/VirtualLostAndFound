@@ -227,6 +227,7 @@
             this.Name = "frmProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Profile";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmProfile_FormClosing);
             this.Load += new System.EventHandler(this.frmProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbProfilePic)).EndInit();
             this.ResumeLayout(false);

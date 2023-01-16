@@ -38,5 +38,10 @@ namespace WindowsFormsApp2
             frmWelcome.Show();
             this.Visible = false;
         }
+
+        private void frmAdminTable_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

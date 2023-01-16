@@ -114,6 +114,7 @@
             this.Name = "frmFinderTable";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Finder\'s View";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmFinderTable_FormClosing);
             this.Load += new System.EventHandler(this.frmFinderTable_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReports)).EndInit();
             this.ResumeLayout(false);

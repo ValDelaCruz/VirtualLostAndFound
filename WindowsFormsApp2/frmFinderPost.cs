@@ -168,14 +168,10 @@ namespace WindowsFormsApp2
 
         private void frmFinderPost_FormClosing(object sender, FormClosingEventArgs e)
         {
-            try
-            {
+            
                 videoSource.Stop();
-            }
-            catch
-            {
-                return;
-            }
+                Environment.Exit(0);
+
         }
 
         private void frmFinderPost_Load(object sender, EventArgs e)

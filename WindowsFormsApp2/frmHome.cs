@@ -45,5 +45,10 @@ namespace WindowsFormsApp2
             frmHelpCenter.Show();
             this.Visible = false;
         }
+
+        private void frmHome_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
