@@ -63,7 +63,7 @@
             this.lbl2.AutoSize = true;
             this.lbl2.Font = new System.Drawing.Font("Rockwell", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl2.ForeColor = System.Drawing.Color.Teal;
-            this.lbl2.Location = new System.Drawing.Point(27, 71);
+            this.lbl2.Location = new System.Drawing.Point(12, 52);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(103, 24);
             this.lbl2.TabIndex = 25;
@@ -85,7 +85,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Rockwell", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Teal;
-            this.label2.Location = new System.Drawing.Point(109, 388);
+            this.label2.Location = new System.Drawing.Point(277, 385);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 24);
             this.label2.TabIndex = 33;
@@ -97,7 +97,7 @@
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Chocolate;
-            this.label4.Location = new System.Drawing.Point(44, 683);
+            this.label4.Location = new System.Drawing.Point(182, 692);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(1398, 82);
             this.label4.TabIndex = 36;
@@ -112,20 +112,19 @@
             "                If you can’t sign up, one possible reason is that you didn’t fill" +
                 " out all of the information the registration is asking ",
             "you for. If not, it is possible that you didn’t upload your profile picture which" +
-                " is required. The system will require ",
-            "you to be able to provide all the information and image it is asking for, otherwi" +
-                "se, it will reject or deny your ",
-            "registration. ",
+                " is required. The system will require you to ",
+            "be able to provide all the information and image it is asking for, otherwise, it " +
+                "will reject or deny your registration. ",
             "",
             "               If none of the possible reason above happened, or if further probl" +
-                "ems occurred during registration, ",
-            "please contact the developers of the system with their contact information below." +
-                ""});
-            this.cbFAQs1.Location = new System.Drawing.Point(113, 416);
+                "ems occurred during registration, please ",
+            "contact the developers of the system with their contact information below."});
+            this.cbFAQs1.Location = new System.Drawing.Point(281, 413);
             this.cbFAQs1.Margin = new System.Windows.Forms.Padding(4);
             this.cbFAQs1.Name = "cbFAQs1";
             this.cbFAQs1.Size = new System.Drawing.Size(1205, 28);
             this.cbFAQs1.TabIndex = 37;
+            this.cbFAQs1.Text = "•Why can’t I sign up? ";
             // 
             // comboBox1
             // 
@@ -144,7 +143,7 @@
                 "st, click the Submit button. If you do not have any pictures of your lost item, " +
                 "you may click SKIP. Your request ",
             "to claim an item will be received by the admin, then just wait for their reply."});
-            this.comboBox1.Location = new System.Drawing.Point(113, 452);
+            this.comboBox1.Location = new System.Drawing.Point(281, 449);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(1205, 28);
@@ -161,7 +160,7 @@
             resources.GetString("comboBox2.Items1"),
             "your username and password, log in to your account. After logging in, you can use" +
                 " the system, and even claim an item in the Seeker’s View form."});
-            this.comboBox2.Location = new System.Drawing.Point(113, 488);
+            this.comboBox2.Location = new System.Drawing.Point(281, 485);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(1205, 28);
@@ -178,7 +177,7 @@
             resources.GetString("comboBox3.Items1"),
             "form again, and in the table, you will be able to see the post you have made, as " +
                 "well as your previous posts."});
-            this.comboBox3.Location = new System.Drawing.Point(113, 524);
+            this.comboBox3.Location = new System.Drawing.Point(281, 521);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(1205, 28);
@@ -194,7 +193,7 @@
             resources.GetString("comboBox4.Items"),
             "As a finder, if you want to see your posts, just click the Finder button in the H" +
                 "ome Page, and you will see all the posts you’ve made."});
-            this.comboBox4.Location = new System.Drawing.Point(113, 560);
+            this.comboBox4.Location = new System.Drawing.Point(281, 557);
             this.comboBox4.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(1205, 28);
@@ -211,7 +210,7 @@
                 " perspective, like, if you are the finder, then the item you have found will be " +
                 "called “found item”. ",
             "If you are the seeker, then the item you have lost will be called “lost item”. "});
-            this.comboBox5.Location = new System.Drawing.Point(113, 596);
+            this.comboBox5.Location = new System.Drawing.Point(281, 593);
             this.comboBox5.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(1205, 28);
@@ -231,7 +230,7 @@
                 "arch button. All the items matching the keyword you have searched will be seen i" +
                 "n the ",
             "table."});
-            this.comboBox6.Location = new System.Drawing.Point(113, 632);
+            this.comboBox6.Location = new System.Drawing.Point(281, 629);
             this.comboBox6.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(1205, 28);
@@ -242,11 +241,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Teal;
-            this.label1.Location = new System.Drawing.Point(12, 95);
+            this.label1.Location = new System.Drawing.Point(12, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1727, 121);
+            this.label1.Size = new System.Drawing.Size(1532, 282);
             this.label1.TabIndex = 44;
             this.label1.Text = resources.GetString("label1.Text");
             // 
@@ -255,7 +254,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1539, 806);
+            this.ClientSize = new System.Drawing.Size(1608, 806);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox6);
             this.Controls.Add(this.comboBox5);

@@ -143,10 +143,17 @@
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>
-             The Virtual Lost and Found system is an online version of the lost and found. Just like the original lost and found, we have the finder and the seeker. The finder is the one who found an item, while the seeker is the one who lost an item. 
-The finder may create a post about the item they have found. They must also include a picture of the item. Aside from this, the finder can also view what they have posted. If the finder wants to view all the other posts of the other finders, they 
-must go to the Seeker’s View form. The seeker will go to the Seeker’s View form and will be able to view all the finder’s post. They can search their lost item in the table, and from there, find the item they have lost. After finding their lost item 
-they may request a claim for it. For security purposes, the system will ask the seeker to provide an image of their lost item as verification. There will also be an admin that will be the one handling the request claims and transaction of items.   
+             The Virtual Lost and Found system is an online version of the lost and found. Just like the original lost and found, we have the finder and the seeker. The finder is the one who found an item, 
+while the seeker is the one who lost an item. 
+
+             The finder may create a post about the item they have found. They must also include a picture of the item. Aside from this, the finder can also view what they have posted by going to the 
+Seeker's View. If the finder wants to view all the other posts of the other finders, they must go to the Seeker’s View form. 
+
+             The seeker will go to the Seeker’s View form and will be able to view all the finder’s post. They can search their lost item in the table, and from there, find the item they have lost. After 
+finding their lost item they may request a claim for it. For security purposes, the system will ask the seeker to provide an image 
+of their lost item as verification. 
+             
+             There will also be an admin that will be the one handling the request claims and transaction of items.   
 
              The purpose of creating the Virtual Lost and Found system is to make the Lost and Found transactions easier using this system.
 </value>
