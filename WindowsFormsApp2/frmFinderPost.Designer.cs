@@ -355,7 +355,7 @@
             // tbItemModel
             // 
             this.tbItemModel.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbItemModel.ForeColor = System.Drawing.Color.Silver;
+            this.tbItemModel.ForeColor = System.Drawing.Color.Black;
             this.tbItemModel.Location = new System.Drawing.Point(234, 278);
             this.tbItemModel.Name = "tbItemModel";
             this.tbItemModel.Size = new System.Drawing.Size(275, 27);
