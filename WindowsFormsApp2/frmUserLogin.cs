@@ -87,5 +87,23 @@ namespace WindowsFormsApp2
         {
             Environment.Exit(0);
         }
+
+        private void txtfldUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsSymbol(e.KeyChar))
+            {
+                e.Handled = true;
+
+            }
+        }
+
+        private void txtfldPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsSymbol(e.KeyChar))
+            {
+                e.Handled = true;
+
+            }
+        }
     }
 }

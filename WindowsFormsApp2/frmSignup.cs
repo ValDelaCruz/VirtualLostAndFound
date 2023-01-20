@@ -91,7 +91,7 @@ namespace WindowsFormsApp2
         private void tbFirstName_KeyPress(object sender, KeyPressEventArgs e)
         {
 
-            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar) )
             {
                 e.Handled = true;
                 
@@ -101,7 +101,7 @@ namespace WindowsFormsApp2
 
         private void tbMiddleInitial_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
             {
                 e.Handled = true;
 
@@ -110,7 +110,7 @@ namespace WindowsFormsApp2
 
         private void tbLastName_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
             {
                 e.Handled = true;
 
@@ -200,6 +200,33 @@ namespace WindowsFormsApp2
                 btnCapture.Visible = true;
                 btnReset.Visible = true;
             }  
+        }
+
+        private void tbUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsSymbol(e.KeyChar))
+            {
+                e.Handled = true;
+
+            }
+        }
+
+        private void tbPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsSymbol(e.KeyChar))
+            {
+                e.Handled = true;
+
+            }
+        }
+
+        private void tbEmail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && !char.IsDigit(e.KeyChar) && !char.IsSymbol(e.KeyChar))
+            {
+                e.Handled = true;
+
+            }
         }
     }
 }

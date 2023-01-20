@@ -51,6 +51,7 @@
             this.txtfldUsername.TabIndex = 2;
             this.txtfldUsername.Text = "Username";
             this.txtfldUsername.TextChanged += new System.EventHandler(this.txtfldUsername_TextChanged);
+            this.txtfldUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtfldUsername_KeyPress);
             // 
             // txtfldPassword
             // 
@@ -64,6 +65,7 @@
             this.txtfldPassword.Size = new System.Drawing.Size(271, 31);
             this.txtfldPassword.TabIndex = 3;
             this.txtfldPassword.Text = "Password";
+            this.txtfldPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtfldPassword_KeyPress);
             // 
             // btnUserLogin
             // 
