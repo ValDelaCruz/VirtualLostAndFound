@@ -99,7 +99,7 @@
             this.label4.ForeColor = System.Drawing.Color.Chocolate;
             this.label4.Location = new System.Drawing.Point(182, 692);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(1398, 82);
+            this.label4.Size = new System.Drawing.Size(1349, 42);
             this.label4.TabIndex = 36;
             this.label4.Text = resources.GetString("label4.Text");
             // 
