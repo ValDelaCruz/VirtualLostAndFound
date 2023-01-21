@@ -32,7 +32,7 @@ namespace WindowsFormsApp2
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            string SQLQuery = ($@"INSERT INTO FinderPost (ItemType, ItemColor, ItemBrand, ItemModel, LocationFound, DateFound, TimeFound, UploadedItem)
+            string SQLQuery = ($@"INSERT INTO FinderPost (ItemType, ItemColor, ItemBrand, ItemModel, LocationFound, DateFound, TimeFound, ItemProof)
                                 VALUES('{tbItemType.Text}', '{tbItemColor.Text}', '{tbItemBrand.Text}',  '{tbItemModel.Text}', '{tbLocationFound.Text}', '{dtpDateFound.Text}', '{tbTimeFound.Text}','{fileName}')");
 
             DatabaseManager.ExecuteCommand(SQLQuery);
@@ -142,7 +142,7 @@ namespace WindowsFormsApp2
         {
             //Profile Picture Setting and Saving to database
             pbCam2.Image = pbCam.Image;
-            fileName = @"C:\\Users\\Ysah\\Pictures\\VirtualLostAndFound Reports\\" + tbItemBrand.Text + tbItemColor.Text + ".jpg";
+            fileName = @"C:\\Users\\Ysah\\Pictures\\VLF Reported Items\\" + tbItemBrand.Text + tbItemColor.Text + ".jpg";
             var bitmap = new Bitmap(pbCam2.Width, pbCam2.Height);
             pbCam2.DrawToBitmap(bitmap, pbCam2.ClientRectangle);
             System.Drawing.Imaging.ImageFormat imageFormat = null;
