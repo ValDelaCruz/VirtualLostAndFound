@@ -45,7 +45,7 @@ namespace WindowsFormsApp2
 
          public static DataTable RetrieveData()
         {
-            MySqlCommand cmd = new MySqlCommand("SELECT ItemID, ItemType, ItemColor, ItemBrand, LocationFound, DateFound, TimeFound FROM FinderPost", con);
+            MySqlCommand cmd = new MySqlCommand("SELECT ItemID, ItemType, ItemColor, ItemBrand, ItemModel, LocationFound, DateFound, TimeFound FROM FinderPost", con);
             adapter.SelectCommand = cmd;
             DataTable table = new DataTable();
             adapter.Fill(table);

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -27,19 +28,7 @@ namespace WindowsFormsApp2
         }
 
         private void btnRequestClaim_Click(object sender, EventArgs e)
-        {
-            /*
-            frmAdminTable adminTable = new frmAdminTable();
-            dgvReports.ColumnCount = 7;
-            dgvReports.RowCount = 7;
-            adminTable.Display(dgvReports.SelectedRows[0].Cells[0].Value.ToString(), dgvReports.SelectedRows[0].Cells[1].Value.ToString(),
-              dgvReports.SelectedRows[0].Cells[2].Value.ToString(),
-              dgvReports.SelectedRows[0].Cells[3].Value.ToString(),
-              dgvReports.SelectedRows[0].Cells[4].Value.ToString(),
-              dgvReports.SelectedRows[0].Cells[5].Value.ToString(),
-              dgvReports.SelectedRows[0].Cells[6].Value.ToString(),
-              dgvReports.SelectedRows[0].Cells[7].Value.ToString()); */
-              
+        {             
             pbUploadVerification frmVerification = new pbUploadVerification();
             frmVerification.Show();
             this.Visible = false;
